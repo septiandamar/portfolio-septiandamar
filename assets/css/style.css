@@ -336,6 +336,12 @@ main {
   border-radius: 20px;
 }
 
+.sidebar .avatar-box img {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;   
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -398,45 +404,67 @@ main {
 }
 
 .contacts-list {
+  flex-wrap: wrap;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
+/* ===== CONTACT ITEM ===== */
 .contact-item {
-  min-width: 0%;
   display: flex;
-  align-items: flex-start;
   align-items: center;
   gap: 16px;
-}
-
-.contact-info {
-  width : 100%;
-  flex : 1;
   min-width: 0;
+  flex-wrap: wrap; /* 🔥 biar bisa turun */
 }
 
+/* ===== ICON ===== */
+.contact-item .icon-box {
+  min-width: 48px;
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* ===== LABEL (EMAIL, PHONE, DLL) ===== */
 .contact-title {
-  color: var(--light-gray-70);
-  font-size: var(--fs-8);
-  text-transform: uppercase;
-  margin-bottom: 2px;
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 4px;
 }
 
-.contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
-  font-size: var(--fs-7);
+.contact-info p,
+.contact-info span,
+.contact-info address {
+  color: white;
 }
-
 .contact-link {
   display: block;
-  white-space: normal; 
-  word-wrap: break-word;
-  overflow-wrap: break-word; 
+  width: 100%;
+
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+
   word-break: break-word;
+  overflow-wrap: anywhere;
+
+  font-size: 14px;
+  color: white;
 }
 
+@media (min-width: 1250px) {
+  .contact-info .contact-link {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+  }
+}
 .contact-info address { font-style: normal; }
 
 .social-list {
@@ -804,6 +832,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  aspect-ratio: 16 / 9;
   transition: var(--transition-1);
 }
 

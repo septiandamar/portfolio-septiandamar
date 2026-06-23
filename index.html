@@ -5,12 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>Portfolio Septian</title>
 
   <!--
     - custom css link
@@ -74,9 +69,10 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:septiandamarp11@gmail.com" class="contact-link">septiandamarp11@gmail.com</a>
+              <a href="mailto:septiandamarp11@gmail.com" class="contact-link">
+                septiandamarp11@gmail.com
+              </a>
             </div>
-
           </li>
 
           <li class="contact-item">
@@ -102,7 +98,7 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="2005-09-11">11 september 2005</time>
+              <span class="contact Link">11 september 2005</span>
             </div>
 
           </li>
@@ -366,252 +362,228 @@
 
         </section>
 
-        <section class="skill">
+<section class="timeline">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
 
-          <ul class="skills-list content-card">
+            <h3 class="h3">My skills</h3>
+          </div>
 
-            <li class="skills-item">
+          <ol class="timeline-list">
 
-              <div class="title-wrapper">
-                <h5 class="h5">HTML</h5>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">HTML</h4>
+              <span>Pengembangan Web</span>
+              <p class="timeline-text">
+                Membangun kerangka fondasi antarmuka pengguna yang semantik, responsif, dan terstruktur dengan presisi.
+              </p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CSS</h5>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CSS</h4>
+              <span>Desain Antarmuka</span>
+              <p class="timeline-text">
+                Merancang tata letak visual dan mengimplementasikan gaya estetika untuk menciptakan pengalaman pengguna yang menarik.
+              </p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java Script</h5>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">JavaScript</h4>
+              <span>Logika Klien (Client-side)</span>
+              <p class="timeline-text">
+                Mengembangkan interaktivitas dinamis dan mengeksekusi logika pemrograman langsung pada antarmuka aplikasi.
+              </p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">MySQL</h5>
-              </div>
-
-            </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MySQL</h4>
+              <span>Manajemen Basis Data</span>
+              <p class="timeline-text">
+                Mengelola arsitektur basis data relasional dan mengeksekusi kueri terstruktur untuk mengoptimalkan penyimpanan informasi.
+              </p>
             </li>
 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Python</h4>
+              <span>Komputasi & Analisis Data</span>
+              <p class="timeline-text">
+                Menganalisis dataset komprehensif, merancang algoritma komputasi matematis, dan mengotomatiskan penyelesaian masalah logika secara efisien.
+              </p>
             </li>
 
-          </ul>
+          </ol>
 
         </section>
-
       </article>
 
 
-
-      <!--
-        - #PORTFOLIO
-      -->
 
       <article class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
->
-          <div class="filter-select-box">
 
-            <button class="filter-select" data-select>
+        <ul class="filter-list">
+          <li class="filter-item">
+            <button class="active" data-filter-btn>Projects</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter-btn>Certificates</button>
+          </li>
+        </ul>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+        <div class="filter-select-box">
+          <button class="filter-select" data-select>
+            <div class="select-value" data-selecct-value>Projects</div>
+            <div class="select-icon">
+              <ion-icon name="chevron-down"></ion-icon>
+            </div>
+          </button>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.png" alt="Pengaduan MAsyarakat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Pengaduan Masyarakat</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+          <ul class="select-list">
+            <li class="select-item">
+              <button data-select-item>Projects</button>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="Academic Dashboard" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Academic Dashboard</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="select-item">
+              <button data-select-item>Certificates</button>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.png" alt="Website UMKM" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Website UMKM</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.jpeg" alt="Password Manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Password Manager</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="Sistem Keuangan UMKM" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Sistem Keuangan UMKM</h3>
-
-                <p class="project-category">Data Solution</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
           </ul>
+        </div>
 
-        </section>
+        <ul class="project-list">
+
+          <li class="project-item active" data-filter-item data-category="projects">
+            <a href="#">
+              <figure class="project-img">
+                <img src="./assets/images/project-1.png" alt="Pengaduan Masyarakat" loading="lazy">
+              </figure>
+              <h3 class="project-title">Pengaduan Masyarakat</h3>
+              <p class="project-category">Web development</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="projects">
+            <a href="#">
+              <figure class="project-img">
+                <img src="./assets/images/project-2.png" alt="Academic Dashboard" loading="lazy">
+              </figure>
+              <h3 class="project-title">Academic Dashboard</h3>
+              <p class="project-category">Web development</p>
+            </a>
+          </li>
+
+            <li class="project-item active" data-filter-item data-category="projects">
+            <a href="#">
+              <figure class="project-img">
+                <img src="./assets/images/project-3.png" alt="Web UMKM" loading="lazy">
+              </figure>
+              <h3 class="project-title">Web UMKM</h3>
+              <p class="project-category">Web Design</p>
+            </a>
+          </li>
+
+            <li class="project-item active" data-filter-item data-category="projects">
+            <a href="#">
+              <figure class="project-img">
+                <img src="./assets/images/project-4.jpeg" alt="Password Manager" loading="lazy">
+              </figure>
+              <h3 class="project-title">Password Manager</h3>
+              <p class="project-category">Web development</p>
+            </a>
+          </li>
+
+            <li class="project-item active" data-filter-item data-category="projects">
+            <a href="#">
+              <figure class="project-img">
+                <img src="./assets/images/project-5.png" alt="Web Studio Yoga" loading="lazy">
+              </figure>
+              <h3 class="project-title">Web Studio Yoga</h3>
+              <p class="project-category">Web design</p>
+            </a>
+          </li>
+
+            <li class="project-item active" data-filter-item data-category="projects">
+            <a href="#">
+              <figure class="project-img">
+                <img src="./assets/images/project-6.jpeg" alt="cipher save" loading="lazy">
+              </figure>
+              <h3 class="project-title">Cryptography Application</h3>
+              <p class="project-category">Desktop Development</p>
+            </a>
+          </li>
+
+          <li class="project-item" data-filter-item data-category="certificates">
+            <div class="project-item-content">
+
+                <figure class="project-img">
+                <img src="./assets/images/sertif 1.png" alt="Sertifikat SENATIB" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Seminar SENATIB</h3>
+            </div>
+          </li>
+
+          <li class="project-item" data-filter-item data-category="certificates">
+            <div class="project-item-content">
+
+                <figure class="project-img">
+                <img src="./assets/images/sertif 2.png" alt="Sertifikat Lomba Poster Digital" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Lomba Poster Digital</h3>
+            </div>
+          </li>
+
+          <li class="project-item" data-filter-item data-category="certificates">
+            <div class="project-item-content">
+
+                <figure class="project-img">
+                <img src="./assets/images/sertif revou.png" alt="Sertifikat RevoU" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Coding Camp</h3>
+            </div>
+          </li>
+
+            <li class="project-item" data-filter-item data-category="certificates">
+            <div class="project-item-content">
+
+                <figure class="project-img">
+                <img src="./assets/images/sertif 3.PNG" alt="Sertifikat ki" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Kunjungan Industri</h3>
+            </div>
+          </li>
+
+            <li class="project-item" data-filter-item data-category="certificates">
+              <div class="project-item-content">
+
+                  <figure class="project-img">
+                  <img src="./assets/images/sertif 4.jpg" alt="Sertifikat webinar" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Webinar Techonology</h3>
+
+              </div>
+            </li>
+
+
+          <li class="project-item" data-filter-item data-category="certificates">
+            <div class="project-item-content"> 
+
+              <figure class="project-img">
+              <img src="./assets/images/sertif 5.PNG" alt="Sertifikat lomba" loading="lazy">
+            </figure>
+            
+            <h3 class="project-title">Lomba Infografis</h3>
+  </div>
+</li>
+        </ul>
 
       </article>
 
